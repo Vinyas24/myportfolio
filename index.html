@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - VINYAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a0f2b;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .text {
+            color: #00c8ff;
+            text-shadow: 0 0 10px #00c8ff, 0 0 20px #00c8ff, 0 0 40px #00c8ff;
+        }
+
+        .btn {
+            background-color: #00c8ff;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #00c8ff;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .card {
+            background: linear-gradient(135deg, #1a002f, #3b014d);
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #111;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .form-control {
+            background-color: #1a002f;
+            border: 1px solid #00c8ff;
+            color: #fff;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 5px #00c8ff;
+        }
+
+        .personal-info-table th,
+        .personal-info-table td {
+            border: 1px solid #00c8ff;
+            padding: 10px;
+        }
+
+        .personal-info-table th {
+            background-color: #1a002f;
+            color: #ffffff;
+        }
+
+        .personal-info-table td {
+            background-color: #29014d;
+            color: #0196fa;
+        }
+
+        .personal-info-table tr:hover {
+            background-color: #3b014d;
+        }
+
+        .avatar-lg {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #00c8ff;
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            height: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .html {
+            background-color: #f39c12;
+        }
+
+        .css {
+            background-color: #e74c3c;
+        }
+
+        .js {
+            background-color: #3498db;
+        }
+
+        .react {
+            background-color: #1abc9c;
+        }
+
+        .node {
+            background-color: #2ecc71;
+        }
+
+        .social-icons a {
+            color: #00c8ff;
+            font-size: 30px;
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text" href="#biodata">Bio-Data</a></li>
+                    <li class="nav-item"><a class="nav-link text" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link text" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="d-flex justify-content-center align-items-center text-center"
+        style="background: linear-gradient(135deg, #29014d, #1a002f); padding: 60px 0;">
+        <div class="container">
+            <h1 class="display-2 text">Hello! I'm VINYAS :)</h1>
+            <h6 class="display-6 text">Welcome to My Portfolio</h6>
+            <p class="lead text-white-50">Discover My Bio-Data, Resume, Skills & Contact Info!</p>
+        </div>
+    </header>
+
+    <main class="py-5" id="biodata">
+        <div class="container">
+            <section>
+                <div class="row mb-5">
+                    <div class="col-md-4 text-center">
+                        <img src="./profilepic.jpeg" alt="Profile Image" class="avatar-lg">
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="text mb-4">Personal Information</h2>
+                        <table class="table table-bordered personal-info-table">
+                            <tbody>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>VINYAS</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>vinyas.22cs183@sode-edu.in</td>
+                                </tr>
+                                <tr>
+                                    <th>Location</th>
+                                    <td>Nandalike, Udupi</td>
+                                </tr>
+                                <tr>
+                                    <th>Phone</th>
+                                    <td>+91 63603615907</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="text-center mb-1" id="resume">
+                    <a href="./vinyas_resume.pdf" download class="btn btn-lg">Download My Resume</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center text mb-5">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 shadow">
+                        <h4 class="card-title text">Frontend Development</h4>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>React</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 shadow">
+                        <h4 class="card-title text">Backend Development</h4>
+                        <ul>
+                            <li>Node.js, Express, Java, C</li>
+                            <li>MongoDB</li>
+                            <li>REST APIs, WebSocket</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 shadow">
+                        <h4 class="card-title text">Tools & Technologies</h4>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="bg-dark py-5">
+        <div class="text-center mt-4 social-icons">
+            <a href="https://www.linkedin.com/in/vinyas-3888b225b/" target="_blank" class="text"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Vinyas24" target="_blank" class="text"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/vinyas_24/?hl=en" target="_blank" class="text"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <div class="container">
+
+            <h2 class="text-center text my-5 mb-4">Contact Me</h2>
+            <form id="contactForm">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                            required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"
+                        required></textarea>
+                </div>
+
+                <button type="submit" onclick="sendEmail()" class="neon-btn btn-lg w-100">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("N4VvoffUd3dKO4uge");
+        })();
+
+        document.getElementById("contactForm").onsubmit = function (event) {
+            event.preventDefault();
+            const submitButton = event.target.querySelector("button[type='submit']");
+            submitButton.disabled = true;
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            };
+            emailjs.send("service_84lzqnd", "template_49xurjr", formData)
+                .then(response => {
+                    console.log("SUCCESS", response.status, response.text);
+                    alert("Message sent successfully!");
+                    submitButton.disabled = false;
+                })
+                .catch(error => {
+                    console.log("FAILED", error);
+                    alert("Failed to send the message. Please try again later.");
+                    submitButton.disabled = false;
+                });
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
